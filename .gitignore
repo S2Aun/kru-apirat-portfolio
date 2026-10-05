@@ -1,0 +1,13 @@
+# Temporary screenshots & previews
+*.tmp
+hero_*.png
+highlights_*.png
+marquee_*.png
+page_*.png
+
+# Node / OS metadata
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
