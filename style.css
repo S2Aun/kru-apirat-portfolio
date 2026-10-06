@@ -2872,6 +2872,99 @@ img {
   font-family: var(--font-heading);
 }
 
+/* Video Pending / Awaiting Official Recording State */
+.video-pending-box {
+  position: relative;
+  background: radial-gradient(circle at center, #1e293b 0%, #090d16 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.video-pending-screen {
+  aspect-ratio: 16 / 9;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(145deg, rgba(15, 23, 42, 0.92), rgba(30, 41, 59, 0.75)),
+              radial-gradient(ellipse at 50% 30%, rgba(245, 158, 11, 0.08), transparent 70%);
+}
+
+.video-pending-screen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.vpb-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.15), rgba(217, 119, 6, 0.08));
+  border: 1.5px dashed rgba(245, 158, 11, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.15);
+  position: relative;
+  z-index: 1;
+}
+
+.vpb-badge {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: #fbbf24;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 0.22rem 0.7rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.45rem;
+  z-index: 1;
+}
+
+.vpb-title {
+  color: #f8fafc;
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem 0;
+  z-index: 1;
+}
+
+.vpb-note {
+  color: #94a3b8;
+  font-size: 0.8rem;
+  margin: 0;
+  max-width: 320px;
+  line-height: 1.5;
+  z-index: 1;
+}
+
+.vpb-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 1.2rem;
+  background: rgba(2, 6, 23, 0.95);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  font-size: 0.8rem;
+  font-family: var(--font-heading);
+}
+
 .video-doc-box {
   background: var(--bg-card-alt);
   border: 1px solid var(--border-color);

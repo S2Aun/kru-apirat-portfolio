@@ -498,7 +498,7 @@ function openImageModal(imgSrc, titleText, descText) {
 /* =========================================================
    Video Modal Viewer (ว9)
    ========================================================= */
-function openVideoModal(videoTitle, durationText, folderPath, youtubeId = 'ezv56zdDgL0') {
+function openVideoModal(videoTitle, durationText, folderPath, youtubeId = '') {
   const modal = document.getElementById('modalViewer');
   const title = document.getElementById('modalTitle');
   const body = document.getElementById('modalBody');
@@ -506,6 +506,36 @@ function openVideoModal(videoTitle, durationText, folderPath, youtubeId = 'ezv56
   if (!modal || !title || !body) return;
 
   title.innerHTML = `<i class="fa-solid fa-circle-play color-red"></i> ${videoTitle}`;
+
+  if (!youtubeId) {
+    body.innerHTML = `
+      <div style="text-align: center; padding: 2.5rem 1.5rem; line-height: 1.7;">
+        <div style="width: 72px; height: 72px; border-radius: 50%; background: rgba(245, 158, 11, 0.15); border: 1.5px dashed rgba(245, 158, 11, 0.5); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: #fbbf24; font-size: 1.8rem;">
+          <i class="fa-solid fa-hourglass-start"></i>
+        </div>
+        <span class="badge badge-warning" style="margin-bottom: 0.75rem;"><i class="fa-solid fa-clock-rotate-left"></i> อยู่ระหว่างบันทึกเทปการสอนจริง</span>
+        <h3 style="color: var(--text-color); margin-bottom: 0.5rem; font-size: 1.25rem;">${videoTitle}</h3>
+        <p style="color: var(--text-muted); font-size: 0.92rem; max-width: 480px; margin: 0 auto 1.5rem;">
+          วิดีโอนี้อยู่ระหว่างดำเนินการบันทึกเทปการจัดการเรียนรู้จริงในชั้นเรียนตามเกณฑ์ ก.ค.ศ. ว9/2564 เมื่อดำเนินการเสร็จสิ้นจะเผยแพร่และนำเข้าสู่ระบบ DPA ต่อไป
+        </p>
+        <div style="background: var(--bg-card-alt); padding: 1rem; border-radius: 10px; margin-bottom: 1.5rem; font-size: 0.88rem; border: 1px solid var(--border-color); text-align: left;">
+          <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 4px;">
+            <i class="fa-solid fa-folder"></i> ตำแหน่งโฟลเดอร์ Google Drive ของสถานศึกษา:
+          </p>
+          <code style="font-family: monospace; font-size: 0.82rem; word-break: break-all; color: var(--text-muted);">G:\\ไดร์ฟของฉัน\\วิทยฐานะ ครู\\Pic\\${folderPath}</code>
+        </div>
+        <div style="display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap;">
+          <button class="btn btn-secondary" onclick="closeModal()">ปิดหน้าต่าง</button>
+          <a href="${DRIVE_BASE_URL}" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-google-drive"></i> เปิดใน Google Drive
+          </a>
+        </div>
+      </div>
+    `;
+    modal.style.display = 'flex';
+    return;
+  }
+
   body.innerHTML = `
     <div style="text-align: left; line-height: 1.7;">
       <!-- Embedded Responsive YouTube Player -->
@@ -530,7 +560,7 @@ function openVideoModal(videoTitle, durationText, folderPath, youtubeId = 'ezv56
         <p style="font-weight: 600; color: var(--color-primary); margin-bottom: 4px; font-size: 0.85rem;">
           <i class="fa-solid fa-folder"></i> ตำแหน่งโฟลเดอร์ Google Drive ของสถานศึกษา:
         </p>
-        <code style="font-family: monospace; font-size: 0.82rem; word-break: break-all; color: var(--text-muted);">G:\ไดร์ฟของฉัน\วิทยฐานะ ครู\Pic\${folderPath}</code>
+        <code style="font-family: monospace; font-size: 0.82rem; word-break: break-all; color: var(--text-muted);">G:\\ไดร์ฟของฉัน\\วิทยฐานะ ครู\\Pic\\${folderPath}</code>
       </div>
 
       <div style="display: flex; gap: 0.75rem; justify-content: flex-end; flex-wrap: wrap;">

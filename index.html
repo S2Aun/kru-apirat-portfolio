@@ -199,8 +199,8 @@
             <a href="#challenge" class="btn-editorial-primary">
               <i class="fa-solid fa-fire"></i> ประเด็นท้าทาย 5E
             </a>
-            <a href="https://www.youtube.com/watch?v=ezv56zdDgL0" target="_blank" class="btn-editorial-secondary" style="border-color: rgba(239, 68, 68, 0.6); color: #f87171;">
-              <i class="fa-brands fa-youtube"></i> วิดีโอสอน 5E
+            <a href="#videos" class="btn-editorial-secondary" style="border-color: rgba(239, 68, 68, 0.6); color: #f87171;">
+              <i class="fa-solid fa-video"></i> คลิปวิดีโอ วPA
             </a>
             <a href="https://share.gemini.google/bKTnUIqIepT9" target="_blank" class="btn-editorial-glass" style="border-color: rgba(6, 182, 212, 0.6); color: #38bdf8;">
               <i class="fa-solid fa-book-open"></i> สื่อ E-Book
@@ -1000,9 +1000,6 @@
                   <div class="ind-media">
                     <div class="ind-evidence-card">
                       <div style="padding: 0.65rem 0.85rem 0; display: flex; flex-direction: column; gap: 0.45rem;">
-                        <a href="https://www.youtube.com/watch?v=ezv56zdDgL0" target="_blank" class="btn btn-sm btn-danger" style="background: #dc2626; color: #fff; font-size: 0.78rem; padding: 0.35rem 0.7rem; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;">
-                          <i class="fa-brands fa-youtube"></i> วิดีทัศน์ชุดกิจกรรมการสอน 5E (YouTube ทางการ)
-                        </a>
                         <a href="https://youtu.be/PoKbU_dj7T8" target="_blank" class="btn btn-sm btn-danger" style="background: #e11d48; color: #fff; font-size: 0.78rem; padding: 0.35rem 0.7rem; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem;">
                           <i class="fa-brands fa-youtube"></i> 🎬 มัคคุเทศก์น้อย ตามรอยไม้กลายเป็นหินที่คลองม่วง
                         </a>
@@ -2244,9 +2241,6 @@
             <button class="btn btn-primary btn-sm" onclick="openClassroomVideoModal('assets/vdo/active_learning_drawing.mp4', 'วิดีโอบันทึกการจัดการเรียนรู้เชิงรุก Active Learning 5E • โรงเรียนวันอาสาพัฒนา 2520')">
               <i class="fa-solid fa-expand"></i> ชมวิดีโอฉบับเต็ม (HD)
             </button>
-            <a href="https://www.youtube.com/watch?v=ezv56zdDgL0" target="_blank" class="btn btn-danger btn-sm" style="background: #dc2626; color: #fff;">
-              <i class="fa-brands fa-youtube"></i> ชมบน YouTube
-            </a>
             <a href="https://share.gemini.google/bKTnUIqIepT9" target="_blank" class="btn btn-outline-cyan btn-sm">
               <i class="fa-solid fa-book-open"></i> สื่อ E-Book
             </a>
@@ -3500,17 +3494,18 @@
             <span class="vch-req">เกณฑ์ วPA ว9</span>
           </div>
 
-          <div class="video-mockup-player" onclick="openVideoModal('คลิปวิดีโอบันทึกการจัดการเรียนรู้เชิงรุก (Active Learning 5E)', '60 นาที', '04_ประเด็นท้าทาย_Challenge/4.2_กิจกรรมการสอนตามประเด็นท้าทาย', 'ezv56zdDgL0')">
-            <div class="vmp-screen" style="background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 0.88)), url('assets/vdo_thumbs/thumb_ezv56zdDgL0.jpg') center/cover no-repeat;">
-              <div class="vmp-play-btn"><i class="fa-solid fa-play"></i></div>
-              <div class="vmp-info-overlay">
-                <span class="vmp-badge">Active Learning 5E • ชั้น ป.3/2</span>
-                <h4>เรื่อง "ด๊ะดาดของดี...ดินด่านเกวียน" (ชั้น ป.3/2)</h4>
+          <div class="video-pending-box">
+            <div class="video-pending-screen">
+              <div class="vpb-icon-wrap">
+                <i class="fa-solid fa-video"></i>
               </div>
+              <span class="vpb-badge"><i class="fa-solid fa-hourglass-start"></i> อยู่ระหว่างบันทึกเทปการสอนจริง</span>
+              <h4 class="vpb-title">รอคลิปวิดีโอบันทึกการสอนจริง (ชั้น ป.3/2)</h4>
+              <p class="vpb-note">บันทึกกระบวนการจัดการเรียนรู้เชิงรุก Active Learning 5E ต่อเนื่องไม่เกิน 60 นาที ตามหลักเกณฑ์ ก.ค.ศ. ว9/2564</p>
             </div>
-            <div class="vmp-controls">
-              <span><i class="fa-solid fa-play"></i> 00:00 / 58:45</span>
-              <span><i class="fa-solid fa-volume-high"></i> HD 1080p</span>
+            <div class="vpb-controls">
+              <span><i class="fa-solid fa-hourglass-half text-amber"></i> สถานะ: รอคลิปจริง</span>
+              <span><i class="fa-solid fa-camera"></i> คมชัดระดับ HD 1080p (Uncut)</span>
             </div>
           </div>
 
@@ -3544,14 +3539,11 @@
             </div>
 
             <div class="video-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <button class="btn btn-primary" style="flex: 1; min-width: 140px;" onclick="openVideoModal('คลิปวิดีโอบันทึกการจัดการเรียนรู้เชิงรุก (Active Learning 5E)', '60 นาที', '04_ประเด็นท้าทาย_Challenge/4.2_กิจกรรมการสอนตามประเด็นท้าทาย', 'ezv56zdDgL0')">
-                <i class="fa-solid fa-circle-play"></i> เปิดดูคลิปในเว็บ
+              <button class="btn btn-secondary" style="flex: 1; min-width: 140px; opacity: 0.85; cursor: default;" disabled>
+                <i class="fa-solid fa-clock-rotate-left text-amber"></i> รออัปโหลดคลิปจริง
               </button>
-              <a href="https://www.youtube.com/watch?v=ezv56zdDgL0" target="_blank" class="btn btn-danger" style="background: #dc2626; color: #fff; flex: 1; min-width: 140px; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
-                <i class="fa-brands fa-youtube"></i> ชมบน YouTube
-              </a>
-              <button class="btn btn-secondary btn-block" style="margin-top: 0.25rem;" onclick="openDriveFolder('04_ประเด็นท้าทาย_Challenge/4.2_กิจกรรมการสอนตามประเด็นท้าทาย')">
-                <i class="fa-brands fa-google-drive"></i> เปิดโฟลเดอร์ไฟล์คลิปวิดีโอใน Drive
+              <button class="btn btn-secondary" style="flex: 1; min-width: 140px;" onclick="openDriveFolder('04_ประเด็นท้าทาย_Challenge/4.2_กิจกรรมการสอนตามประเด็นท้าทาย')">
+                <i class="fa-brands fa-google-drive"></i> โฟลเดอร์จัดเก็บใน Drive
               </button>
             </div>
           </div>
@@ -3567,17 +3559,18 @@
             <span class="vch-req">เกณฑ์ วPA ว9</span>
           </div>
 
-          <div class="video-mockup-player" onclick="openVideoModal('คลิปวิดีโอสภาพปัญหา ที่มา หรือแรงบันดาลใจ', '10 นาที', '04_ประเด็นท้าทาย_Challenge/4.1_สภาพปัญหาเดิมของนักเรียน')">
-            <div class="vmp-screen bg-screen-alt">
-              <div class="vmp-play-btn"><i class="fa-solid fa-play"></i></div>
-              <div class="vmp-info-overlay">
-                <span class="vmp-badge">สภาพปัญหาและบริบทสถานศึกษา</span>
-                <h4>การพัฒนาศักยภาพผู้เรียนสู่การคิดสร้างสรรค์ในชุมชนท้องถิ่น</h4>
+          <div class="video-pending-box">
+            <div class="video-pending-screen" style="background: linear-gradient(145deg, rgba(15, 30, 46, 0.92), rgba(15, 23, 42, 0.82)), radial-gradient(ellipse at 50% 30%, rgba(6, 182, 212, 0.08), transparent 70%);">
+              <div class="vpb-icon-wrap" style="background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(14, 165, 233, 0.08)); border-color: rgba(6, 182, 212, 0.45); color: #38bdf8; box-shadow: 0 0 25px rgba(6, 182, 212, 0.15);">
+                <i class="fa-solid fa-lightbulb"></i>
               </div>
+              <span class="vpb-badge" style="background: rgba(6, 182, 212, 0.15); border-color: rgba(6, 182, 212, 0.35); color: #38bdf8;"><i class="fa-solid fa-hourglass-start"></i> อยู่ระหว่างบันทึกเทปจริง</span>
+              <h4 class="vpb-title">รอคลิปวิดีโอสภาพปัญหาและแรงบันดาลใจ</h4>
+              <p class="vpb-note">สะท้อนบริบทสถานศึกษา สภาพปัญหาเดิม และแรงบันดาลใจในการพัฒนานวัตกรรม (ไม่เกิน 10 นาที) ตามเกณฑ์ ว9/2564</p>
             </div>
-            <div class="vmp-controls">
-              <span><i class="fa-solid fa-play"></i> 00:00 / 09:40</span>
-              <span><i class="fa-solid fa-volume-high"></i> HD 1080p</span>
+            <div class="vpb-controls">
+              <span><i class="fa-solid fa-hourglass-half text-cyan"></i> สถานะ: รอคลิปจริง</span>
+              <span><i class="fa-solid fa-microphone-lines"></i> ความยาวไม่เกิน 10 นาที</span>
             </div>
           </div>
 
@@ -3609,11 +3602,11 @@
             </div>
 
             <div class="video-actions" style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
-              <button class="btn btn-primary" style="flex: 1; min-width: 140px;" onclick="openVideoModal('คลิปวิดีโอสภาพปัญหา ที่มา หรือแรงบันดาลใจ', '10 นาที', '04_ประเด็นท้าทาย_Challenge/4.1_สภาพปัญหาเดิมของนักเรียน')">
-                <i class="fa-solid fa-circle-play"></i> เปิดดูคลิปในเว็บ
+              <button class="btn btn-secondary" style="flex: 1; min-width: 140px; opacity: 0.85; cursor: default;" disabled>
+                <i class="fa-solid fa-clock-rotate-left text-cyan"></i> รออัปโหลดคลิปจริง
               </button>
               <button class="btn btn-secondary" style="flex: 1; min-width: 140px;" onclick="openDriveFolder('04_ประเด็นท้าทาย_Challenge/4.1_สภาพปัญหาเดิมของนักเรียน')">
-                <i class="fa-brands fa-google-drive"></i> เปิดไฟล์ใน Drive
+                <i class="fa-brands fa-google-drive"></i> โฟลเดอร์จัดเก็บใน Drive
               </button>
             </div>
           </div>
