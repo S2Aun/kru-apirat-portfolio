@@ -522,7 +522,7 @@ function openVideoModal(videoTitle, durationText, folderPath, youtubeId = 'ezv56
       <div style="background: var(--bg-card-alt); padding: 1.1rem; border-radius: 10px; margin-bottom: 1.2rem; font-size: 0.9rem; border: 1px solid var(--border-color);">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
           <h4 style="color: var(--text-color); font-size: 1.05rem; margin: 0;">${videoTitle}</h4>
-          <span class="badge badge-primary"><i class="fa-solid fa-clock"></i> ${durationText} • ว9/2564</span>
+          <span class="badge badge-primary"><i class="fa-solid fa-video"></i> ${durationText.includes("ว9") ? durationText : durationText + " • ว9/2564"}</span>
         </div>
         <p style="color: var(--text-muted); font-size: 0.86rem; margin-bottom: 0.5rem;">
           <i class="fa-solid fa-link color-cyan"></i> ลิงก์เผยแพร่ทางการ: <a href="https://www.youtube.com/watch?v=${youtubeId}" target="_blank" style="color: var(--color-primary); word-break: break-all;">https://www.youtube.com/watch?v=${youtubeId}</a>
