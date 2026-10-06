@@ -5685,6 +5685,34 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  z-index: 2;
+}
+
+.ach-play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(220, 38, 38, 0.92);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  padding-left: 3px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  transition: transform 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ach-thumb-box:hover .ach-play-overlay {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: #ef4444;
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.5);
 }
 
 /* Card 3 Stage */
