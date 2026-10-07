@@ -30,7 +30,23 @@ function initThemeToggle() {
   const searchStr = window.location.search || (window.location.hash.includes('?') ? window.location.hash.split('?')[1] : '');
   const urlParams = new URLSearchParams(searchStr);
   const themeParam = urlParams.get('theme');
-  const currentTheme = themeParam || localStorage.getItem('pa-theme') || 'light';
+
+  // ล้างค่าเก่าที่อาจค้างใน localStorage เพื่อให้เปิดเว็บเป็นธีมกลางคืนก่อนเสมอ
+  try {
+    if (localStorage.getItem('pa-theme') === 'light') {
+      localStorage.removeItem('pa-theme');
+    }
+  } catch (e) {}
+
+  // กำหนดธีมเริ่มต้น: เป็นธีมกลางคืน (dark) ก่อนเสมอ
+  // หากผู้ใช้กดสลับธีมในแท็บนี้ จะจำใน sessionStorage ชั่วคราว
+  let currentTheme = 'dark';
+  try {
+    currentTheme = themeParam || sessionStorage.getItem('pa-theme') || 'dark';
+  } catch (e) {
+    currentTheme = themeParam || 'dark';
+  }
+
   document.body.setAttribute('data-theme', currentTheme);
   updateThemeIcon(currentTheme);
 
@@ -38,7 +54,9 @@ function initThemeToggle() {
     const isDark = document.body.getAttribute('data-theme') === 'dark';
     const newTheme = isDark ? 'light' : 'dark';
     document.body.setAttribute('data-theme', newTheme);
-    localStorage.setItem('pa-theme', newTheme);
+    try {
+      sessionStorage.setItem('pa-theme', newTheme);
+    } catch (e) {}
     updateThemeIcon(newTheme);
   });
 }
