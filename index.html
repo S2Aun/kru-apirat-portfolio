@@ -4230,162 +4230,270 @@
           </div>
         </div>
 
-        <!-- 2-Col Grid: Quantitative vs Qualitative -->
-        <div class="pa-summary-grid">
-          
-          <!-- Column 1: Quantitative Outcomes (2.1 ผลลัพธ์เชิงปริมาณ) -->
-          <div class="pa-col-card pa-col-quant">
-            <div class="pa-col-header">
-              <h4 class="pa-col-title pa-quant-title">
-                <i class="fa-solid fa-chart-pie"></i> 2.1 ผลลัพธ์เชิงปริมาณ (Quantitative Outcomes)
-              </h4>
-              <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.4); font-size: 0.78rem;">
-                <i class="fa-solid fa-circle-check"></i> บรรลุเกินเป้าหมาย
-              </span>
+        <!-- Quick-Scan 4-Metric Bar (ดูสรุปภาพรวมใน 3 วินาที) -->
+        <div class="pa-quick-stat-grid">
+          <!-- Stat 1: Creative Thinking -->
+          <div class="pa-quick-stat-card">
+            <div class="pa-quick-stat-top">
+              <span class="pa-quick-stat-label"><i class="fa-solid fa-palette text-cyan"></i> ผลสัมฤทธิ์ชิ้นงาน</span>
+              <div class="pa-quick-stat-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
+                <i class="fa-solid fa-shapes"></i>
+              </div>
+            </div>
+            <div class="pa-quick-stat-val text-green">100<span style="font-size: 1.1rem; margin-left: 2px;">%</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">นักเรียน 24 คน ระดับดีขึ้นไป</div>
+            <span class="pa-quick-stat-pill" style="background: rgba(16, 185, 129, 0.18); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.35);">
+              <i class="fa-solid fa-arrow-trend-up"></i> เป้า 85% ➔ จริง 100% (+15%)
+            </span>
+          </div>
+
+          <!-- Stat 2: Active Learning Behavior -->
+          <div class="pa-quick-stat-card">
+            <div class="pa-quick-stat-top">
+              <span class="pa-quick-stat-label"><i class="fa-solid fa-bolt text-green"></i> พฤติกรรม Active 5E</span>
+              <div class="pa-quick-stat-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+                <i class="fa-solid fa-users"></i>
+              </div>
+            </div>
+            <div class="pa-quick-stat-val text-green">92.59<span style="font-size: 1.1rem; margin-left: 2px;">%</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">คะแนนสังเกตพฤติกรรมเฉลี่ย</div>
+            <span class="pa-quick-stat-pill" style="background: rgba(16, 185, 129, 0.18); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.35);">
+              <i class="fa-solid fa-circle-check"></i> เป้า 90% ➔ จริง 92.59% (+2.59%)
+            </span>
+          </div>
+
+          <!-- Stat 3: Peer Extension -->
+          <div class="pa-quick-stat-card">
+            <div class="pa-quick-stat-top">
+              <span class="pa-quick-stat-label"><i class="fa-solid fa-chalkboard-user text-purple"></i> ขยายผลเพื่อนครู</span>
+              <div class="pa-quick-stat-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
+                <i class="fa-solid fa-diagram-project"></i>
+              </div>
+            </div>
+            <div class="pa-quick-stat-val" style="color: #c084fc;">100<span style="font-size: 1.1rem; margin-left: 2px;">%</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">นำไปปรับใช้ในชุมชน PLC</div>
+            <span class="pa-quick-stat-pill" style="background: rgba(168, 85, 247, 0.18); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35);">
+              <i class="fa-solid fa-circle-check"></i> เป้า 80% ➔ จริง 100% (+20%)
+            </span>
+          </div>
+
+          <!-- Stat 4: Local Pride -->
+          <div class="pa-quick-stat-card">
+            <div class="pa-quick-stat-top">
+              <span class="pa-quick-stat-label"><i class="fa-solid fa-heart text-amber"></i> ความภูมิใจท้องถิ่น</span>
+              <div class="pa-quick-stat-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+                <i class="fa-solid fa-landmark-dome"></i>
+              </div>
+            </div>
+            <div class="pa-quick-stat-val text-amber">100<span style="font-size: 1.1rem; margin-left: 2px;">%</span></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;">ตระหนักรู้คุณค่าดินด่านเกวียน</div>
+            <span class="pa-quick-stat-pill" style="background: rgba(245, 158, 11, 0.18); color: #f59e0b; border: 1px solid rgba(245, 158, 11, 0.35);">
+              <i class="fa-solid fa-medal"></i> ระดับดีมาก-ดี ครบ 24 คน
+            </span>
+          </div>
+        </div>
+
+        <!-- Section 1: Quantitative Outcomes Bento (2.1 ผลลัพธ์เชิงปริมาณ) -->
+        <div class="pa-block-header">
+          <h4 class="pa-block-title" style="color: #38bdf8;">
+            <i class="fa-solid fa-chart-pie"></i> 2.1 ผลลัพธ์เชิงปริมาณ (Quantitative Outcomes)
+          </h4>
+          <span class="badge" style="background: rgba(16, 185, 129, 0.18); color: #10b981; border: 1px solid rgba(16, 185, 129, 0.35); font-size: 0.8rem;">
+            <i class="fa-solid fa-circle-check"></i> บรรลุเกินเป้าหมายทุกตัวชี้วัด
+          </span>
+        </div>
+
+        <div class="pa-bento-3col">
+          <!-- Card Quant 1 -->
+          <div class="pa-bento-card pa-card-cyan">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
+                <i class="fa-solid fa-palette"></i>
+              </div>
+              <div>
+                <h5 class="pa-bento-card-title">ทักษะการคิดสร้างสรรค์ &amp; คุณภาพชิ้นงาน</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">ใบงานออกแบบ 2D &amp; งานปั้น 3 มิติ (24 คน)</small>
+              </div>
             </div>
 
-            <!-- Item 1: Creative Thinking & Rubric -->
-            <div class="pa-metric-box">
-              <div class="pa-metric-head">
-                <span class="pa-metric-name">
-                  <i class="fa-solid fa-palette text-cyan"></i> ด้านทักษะการคิดสร้างสรรค์ &amp; คุณภาพชิ้นงาน
-                </span>
-                <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; font-weight: 700;">
-                  เกินเป้าหมาย +15%
-                </span>
-              </div>
-              <div class="pa-compare-row">
-                <span class="pa-target-label"><i class="fa-solid fa-bullseye"></i> เป้าหมาย วPA: <strong>ร้อยละ 85</strong> ระดับดีขึ้นไป</span>
-                <span class="pa-actual-label text-green"><i class="fa-solid fa-check-circle"></i> ทำได้จริง: <strong>100%</strong></span>
-              </div>
-              <div class="pa-bar-wrap">
-                <div class="pa-bar-fill pa-bar-cyan" style="width: 100%;"></div>
-              </div>
-              <p class="pa-metric-subtext">
-                นักเรียนชั้น ป.3/2 ร้อยละ <strong>100</strong> (24 จาก 24 คน) มีคะแนนประเมินชิ้นงานการออกแบบลวดลายผ่านเกณฑ์ระดับดีขึ้นไป โดยแบ่งเป็น <strong>ระดับดีมาก 9 คน (37.50%)</strong> และ <strong>ระดับดี 15 คน (62.50%)</strong> ไม่มีผู้เรียนที่ต้องปรับปรุง (0%)
-              </p>
+            <div class="pa-bento-metric-row">
+              <span class="pa-bento-metric-num text-green">100%</span>
+              <span class="pa-bento-metric-target"><i class="fa-solid fa-bullseye"></i> เป้า วPA: ร้อยละ 85</span>
+            </div>
+            <div class="pa-bar-wrap">
+              <div class="pa-bar-fill pa-bar-cyan" style="width: 100%;"></div>
             </div>
 
-            <!-- Item 2: Active Learning Behavior & Local Pride -->
-            <div class="pa-metric-box">
-              <div class="pa-metric-head">
-                <span class="pa-metric-name">
-                  <i class="fa-solid fa-users text-green"></i> ด้านพฤติกรรมการเรียนรู้เชิงรุก &amp; ความภาคภูมิใจ
-                </span>
-                <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; font-weight: 700;">
-                  เกินเป้าหมาย +2.59%
-                </span>
-              </div>
-              <div class="pa-compare-row">
-                <span class="pa-target-label"><i class="fa-solid fa-bullseye"></i> เป้าหมาย วPA: <strong>ร้อยละ 90</strong> ระดับดีขึ้นไป</span>
-                <span class="pa-actual-label text-green"><i class="fa-solid fa-check-circle"></i> ทำได้จริง: <strong>92.59%</strong></span>
-              </div>
-              <div class="pa-bar-wrap">
-                <div class="pa-bar-fill pa-bar-green" style="width: 92.59%;"></div>
-              </div>
-              <p class="pa-metric-subtext">
-                นักเรียนชั้น ป.3/2 ร้อยละ <strong>100</strong> (24 คน) ผ่านเกณฑ์พฤติกรรมระดับดีขึ้นไป คะแนนเฉลี่ยรวม <strong>92.59%</strong> (การมีส่วนร่วมตอบคำถาม <strong>95.83%</strong>, การทำงานกลุ่ม <strong>86.11%</strong>, ความตั้งใจปฏิบัติงาน <strong>95.83%</strong>)
-              </p>
-            </div>
+            <p class="pa-bento-card-desc">
+              นักเรียนร้อยละ <strong>100</strong> มีคะแนนผ่านเกณฑ์ระดับดีขึ้นไป โดยแบ่งเป็น <strong>ระดับดีมาก 9 คน (37.50%)</strong> และ <strong>ระดับดี 15 คน (62.50%)</strong> ไม่มีผู้เรียนปรับปรุง (0%)
+            </p>
 
-            <!-- Item 3: Peer Teachers & Extension -->
-            <div class="pa-metric-box">
-              <div class="pa-metric-head">
-                <span class="pa-metric-name">
-                  <i class="fa-solid fa-chalkboard-user text-purple"></i> ด้านการขยายผลและเครือข่ายครูในโรงเรียน
-                </span>
-                <span class="badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; font-weight: 700;">
-                  เกินเป้าหมาย +20%
-                </span>
-              </div>
-              <div class="pa-compare-row">
-                <span class="pa-target-label"><i class="fa-solid fa-bullseye"></i> เป้าหมาย วPA: <strong>ร้อยละ 80</strong> พึงพอใจและนำไปปรับใช้</span>
-                <span class="pa-actual-label text-green"><i class="fa-solid fa-check-circle"></i> ทำได้จริง: <strong>100%</strong></span>
-              </div>
-              <div class="pa-bar-wrap">
-                <div class="pa-bar-fill pa-bar-purple" style="width: 100%;"></div>
-              </div>
-              <p class="pa-metric-subtext">
-                เพื่อนครูในสถานศึกษามีความพึงพอใจและนำรูปแบบ Active Learning 5E Model ไปปรับประยุกต์ใช้ในการจัดทำแผนการจัดการเรียนรู้ของตนเอง ผ่านกระบวนการชุมชนแห่งการเรียนรู้ทางวิชาชีพ (PLC)
-              </p>
+            <!-- Skills Unlocked -->
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-wand-magic-sparkles text-amber"></i> ความคิดริเริ่มสร้างสรรค์</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-shapes text-cyan"></i> ประติมากรรมดิน 3 มิติ</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-crop-simple text-green"></i> องค์ประกอบศิลป์ 2D</span>
             </div>
           </div>
 
-          <!-- Column 2: Qualitative Outcomes (2.2 ผลลัพธ์เชิงคุณภาพ) -->
-          <div class="pa-col-card pa-col-qual">
-            <div class="pa-col-header">
-              <h4 class="pa-col-title pa-qual-title">
-                <i class="fa-solid fa-sparkles"></i> 2.2 ผลลัพธ์เชิงคุณภาพ (Qualitative Outcomes)
-              </h4>
-              <span class="badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); font-size: 0.78rem;">
-                <i class="fa-solid fa-medal"></i> คุณภาพมาตรฐานวิทยฐานะ
-              </span>
-            </div>
-
-            <!-- Qual Dimension 1: Learners -->
-            <div class="pa-metric-box" style="margin-bottom: 1.15rem;">
-              <span class="pa-metric-name" style="color: #34d399; margin-bottom: 0.85rem; display: block; border-bottom: 1px dashed rgba(52, 211, 153, 0.3); padding-bottom: 0.4rem;">
-                <i class="fa-solid fa-child-reaching"></i> มิติที่ 1: การพัฒนาที่เกิดขึ้นกับผู้เรียน (Learners)
-              </span>
-
-              <div class="pa-qual-point">
-                <div class="pa-qual-icon" style="background: rgba(56, 189, 248, 0.15); color: #38bdf8;">
-                  <i class="fa-solid fa-lightbulb"></i>
-                </div>
-                <div class="pa-qual-body">
-                  <strong>ทักษะการคิดสร้างสรรค์และสุนทรียภาพทางศิลปะ</strong>
-                  <p>นักเรียนสามารถถ่ายทอดจินตนาการและความคิดริเริ่มสร้างสรรค์ผ่านการออกแบบลวดลายและการปั้นดินเผา 3 มิติ ผลงานมีความประณีต สวยงาม และสะท้อนอัตลักษณ์เฉพาะตน</p>
-                </div>
+          <!-- Card Quant 2 -->
+          <div class="pa-bento-card pa-card-green">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+                <i class="fa-solid fa-users-viewfinder"></i>
               </div>
-
-              <div class="pa-qual-point">
-                <div class="pa-qual-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="pa-qual-body">
-                  <strong>ความตระหนักรู้และภาคภูมิใจในรากเหง้าภูมิปัญญาท้องถิ่น</strong>
-                  <p>ผู้เรียนเห็นคุณค่าของมรดกทางวัฒนธรรม "ดินด่านเกวียน" ของบ้านเกิด เกิดความหวงแหนภูมิปัญญาบรรพบุรุษ และสามารถเชื่อมโยงประวัติศาสตร์ท้องถิ่นสู่ชีวิตจริง</p>
-                </div>
-              </div>
-
-              <div class="pa-qual-point">
-                <div class="pa-qual-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
-                  <i class="fa-solid fa-comments"></i>
-                </div>
-                <div class="pa-qual-body">
-                  <strong>สมรรถนะการสื่อสารและการทำงานร่วมกันเป็นทีม</strong>
-                  <p>นักเรียนมีความกล้าแสดงออก มีความมั่นใจในการนำเสนอและแลกเปลี่ยนความคิดเห็น มีทักษะการรับฟังและร่วมมือแก้ปัญหากับเพื่อนในกลุ่มอย่างมีความสุข</p>
-                </div>
+              <div>
+                <h5 class="pa-bento-card-title">พฤติกรรมการเรียนรู้เชิงรุก Active Learning</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">การมีส่วนร่วม ความร่วมมือ และความสนใจ</small>
               </div>
             </div>
 
-            <!-- Qual Dimension 2: Teacher & Institution -->
-            <div class="pa-metric-box">
-              <span class="pa-metric-name" style="color: #38bdf8; margin-bottom: 0.85rem; display: block; border-bottom: 1px dashed rgba(56, 189, 248, 0.3); padding-bottom: 0.4rem;">
-                <i class="fa-solid fa-school"></i> มิติที่ 2: การพัฒนาครูผู้สอนและสถานศึกษา (School &amp; Institution)
-              </span>
+            <div class="pa-bento-metric-row">
+              <span class="pa-bento-metric-num text-green">92.59%</span>
+              <span class="pa-bento-metric-target"><i class="fa-solid fa-bullseye"></i> เป้า วPA: ร้อยละ 90</span>
+            </div>
+            <div class="pa-bar-wrap">
+              <div class="pa-bar-fill pa-bar-green" style="width: 92.59%;"></div>
+            </div>
 
-              <div class="pa-qual-point">
-                <div class="pa-qual-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
-                  <i class="fa-solid fa-gem"></i>
-                </div>
-                <div class="pa-qual-body">
-                  <strong>นวัตกรรมการจัดการเรียนรู้ที่เป็นเลิศ (Best Practice)</strong>
-                  <p>ครูผู้สอนค้นพบและพัฒนานวัตกรรมการสอน Active Learning 5E Model บูรณาการประวัติศาสตร์ท้องถิ่นกับทัศนศิลป์อย่างเป็นระบบ มีหลักฐานเชิงประจักษ์รองรับครบถ้วน</p>
-                </div>
+            <p class="pa-bento-card-desc">
+              นักเรียนร้อยละ <strong>100</strong> ผ่านเกณฑ์ระดับดีขึ้นไป คะแนนเฉลี่ย 3 ด้าน: การตอบคำถาม <strong>95.83%</strong>, การทำงานกลุ่ม <strong>86.11%</strong>, ความตั้งใจปฏิบัติ <strong>95.83%</strong>
+            </p>
+
+            <!-- Skills Unlocked -->
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-magnifying-glass text-green"></i> การสืบเสาะ 5E</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-people-group text-cyan"></i> ทักษะการทำงานเป็นทีม</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-bullseye text-rose"></i> ความกระตือรือร้นมุ่งมั่น</span>
+            </div>
+          </div>
+
+          <!-- Card Quant 3 -->
+          <div class="pa-bento-card pa-card-purple">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(168, 85, 247, 0.15); color: #c084fc;">
+                <i class="fa-solid fa-chalkboard-user"></i>
               </div>
-
-              <div class="pa-qual-point">
-                <div class="pa-qual-icon" style="background: rgba(239, 68, 68, 0.15); color: #f87171;">
-                  <i class="fa-solid fa-sitemap"></i>
-                </div>
-                <div class="pa-qual-body">
-                  <strong>โมเดลต้นแบบการพัฒนาการศึกษาอย่างยั่งยืน</strong>
-                  <p>โรงเรียนวันอาสาพัฒนา 2520 มีรูปแบบการจัดการเรียนรู้เชิงรุกต้นแบบที่สามารถนำไปถ่ายทอด ขยายผลสู่กลุ่มสาระอื่น และใช้เป็นแนวทางยกระดับคุณภาพผู้เรียนได้อย่างต่อเนื่อง</p>
-                </div>
+              <div>
+                <h5 class="pa-bento-card-title">การขยายผลสู่เพื่อนครู &amp; เครือข่าย PLC</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">การปรับใช้โมเดล 5E ในสถานศึกษา</small>
               </div>
             </div>
 
+            <div class="pa-bento-metric-row">
+              <span class="pa-bento-metric-num" style="color: #c084fc;">100%</span>
+              <span class="pa-bento-metric-target"><i class="fa-solid fa-bullseye"></i> เป้า วPA: ร้อยละ 80</span>
+            </div>
+            <div class="pa-bar-wrap">
+              <div class="pa-bar-fill pa-bar-purple" style="width: 100%;"></div>
+            </div>
+
+            <p class="pa-bento-card-desc">
+              เพื่อนครูในสถานศึกษามีความพึงพอใจร้อยละ <strong>100</strong> และนำรูปแบบ Active Learning 5E Model ไปปรับประยุกต์ใช้ในการจัดทำแผนการจัดการเรียนรู้ของตนเองในชุมชน PLC
+            </p>
+
+            <!-- Skills Unlocked -->
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-graduation-cap text-purple"></i> นวัตกรรม 5E Model</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-diagram-project text-green"></i> แลกเปลี่ยนเรียนรู้ PLC</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-share-nodes text-cyan"></i> เครือข่ายขยายผลครู</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2: Qualitative Outcomes & Student Skills Bento (2.2 ผลลัพธ์เชิงคุณภาพ & ทักษะที่ได้เรียนรู้) -->
+        <div class="pa-block-header" style="margin-top: 2.4rem;">
+          <h4 class="pa-block-title" style="color: #34d399;">
+            <i class="fa-solid fa-sparkles"></i> 2.2 ผลลัพธ์เชิงคุณภาพ &amp; ทักษะสมรรถนะ (Qualitative &amp; Learner Skills)
+          </h4>
+          <span class="badge" style="background: rgba(56, 189, 248, 0.18); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.35); font-size: 0.8rem;">
+            <i class="fa-solid fa-award"></i> คุณภาพมาตรฐานวิทยฐานะ
+          </span>
+        </div>
+
+        <div class="pa-bento-4col">
+          <!-- Card Qual 1 -->
+          <div class="pa-bento-card pa-card-amber">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div>
+                <h5 class="pa-bento-card-title">ความคิดสร้างสรรค์ &amp; สุนทรียภาพ</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">มิติด้านศิลปะและจินตนาการ</small>
+              </div>
+            </div>
+            <p class="pa-bento-card-desc">
+              นักเรียนสามารถถ่ายทอดจินตนาการผ่านการออกแบบลวดลายและการปั้นดินเผา 3 มิติได้อย่างมีเอกลักษณ์ ผลงานมีความประณีต สวยงาม และสะท้อนความคิดริเริ่มส่วนบุคคล
+            </p>
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-wand-magic-sparkles text-amber"></i> ความคิดริเริ่ม</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-shapes text-cyan"></i> งานปั้นนูนต่ำ 3D</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-eye text-green"></i> สุนทรียภาพศิลปะ</span>
+            </div>
+          </div>
+
+          <!-- Card Qual 2 -->
+          <div class="pa-bento-card pa-card-terracotta">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(234, 88, 12, 0.15); color: #ea580c;">
+                <i class="fa-solid fa-landmark-dome"></i>
+              </div>
+              <div>
+                <h5 class="pa-bento-card-title">ภูมิปัญญา &amp; ภาคภูมิใจท้องถิ่น</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">มรดกทางวัฒนธรรมดินด่านเกวียน</small>
+              </div>
+            </div>
+            <p class="pa-bento-card-desc">
+              ผู้เรียนเห็นคุณค่าของมรดกทางวัฒนธรรม "ดินด่านเกวียน" ของบ้านเกิด เกิดความหวงแหนภูมิปัญญาบรรพบุรุษ และเชื่อมโยงประวัติศาสตร์ท้องถิ่นสู่การลงมือปฏิบัติจริง
+            </p>
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-heart text-rose"></i> ความภูมิใจท้องถิ่น</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-book-bookmark text-amber"></i> ประวัติศาสตร์ชุมชน</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-fire text-terracotta"></i> ภูมิปัญญาด่านเกวียน</span>
+            </div>
+          </div>
+
+          <!-- Card Qual 3 -->
+          <div class="pa-bento-card pa-card-green">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">
+                <i class="fa-solid fa-comments"></i>
+              </div>
+              <div>
+                <h5 class="pa-bento-card-title">การสื่อสาร &amp; การทำงานเป็นทีม</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">สมรรถนะสำคัญของผู้เรียนในศตวรรษที่ 21</small>
+              </div>
+            </div>
+            <p class="pa-bento-card-desc">
+              นักเรียนมีความกล้าแสดงออก มีความมั่นใจในการนำเสนอผลงานต่อหน้าชั้นเรียน มีทักษะการรับฟัง การแบ่งปัน และร่วมมือแก้ปัญหาในกลุ่มอย่างสร้างสรรค์และมีความสุข
+            </p>
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-bullhorn text-cyan"></i> ทักษะการนำเสนอ</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-handshake text-green"></i> การทำงานร่วมกัน</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-comment-dots text-purple"></i> การแลกเปลี่ยนเรียนรู้</span>
+            </div>
+          </div>
+
+          <!-- Card Qual 4 -->
+          <div class="pa-bento-card pa-card-rose">
+            <div class="pa-bento-card-head">
+              <div class="pa-bento-card-icon" style="background: rgba(244, 63, 94, 0.15); color: #f43f5e;">
+                <i class="fa-solid fa-award"></i>
+              </div>
+              <div>
+                <h5 class="pa-bento-card-title">นวัตกรรมครู &amp; โมเดลสถานศึกษา</h5>
+                <small style="color: var(--text-muted); font-size: 0.78rem;">Best Practice โรงเรียนวันอาสาพัฒนา 2520</small>
+              </div>
+            </div>
+            <p class="pa-bento-card-desc">
+              ค้นพบและพัฒนานวัตกรรม Active Learning 5E Model บูรณาการประวัติศาสตร์กับศิลปะ สำเร็จเป็น Best Practice ที่เป็นต้นแบบขยายผลของสถานศึกษาได้อย่างยั่งยืน
+            </p>
+            <div class="pa-skill-tags-wrap">
+              <span class="pa-skill-pill"><i class="fa-solid fa-gem text-purple"></i> นวัตกรรม Best Practice</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-school text-cyan"></i> โมเดลต้นแบบโรงเรียน</span>
+              <span class="pa-skill-pill"><i class="fa-solid fa-certificate text-amber"></i> มาตรฐานวิทยฐานะ ว9</span>
+            </div>
           </div>
         </div>
 
